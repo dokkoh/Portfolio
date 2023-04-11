@@ -5,7 +5,7 @@ const reas = [
     img: "test",
     nom: "nom du site",
     description: "description du site",
-    adrsse: "https://oclock.io/",
+    adresse: "https://oclock.io/",
   }),
 ];
 
