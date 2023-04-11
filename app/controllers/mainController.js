@@ -1,36 +1,21 @@
-// const mainController = {
+const mainController = {
 
-//   home: function(req, res) {
-//     const firstValues = websites.slice(0, 3);
-//     res.render('home', {
-//       websites: firstValues,
-//     });
-//   },
+  home: function(req, res) {
+    res.send('A faire');
+  },
 
-//   legals: function(req, res) {
-//     res.render('coming-soon', {
-//       title: 'Mentions légales',
-//     });
-//   },
+  legals: function(req, res) {
+    res.send('A faire');
+  },
 
-//   plan: function(req, res) {
-//     res.render('coming-soon', {
-//       title: 'Plan du site',
-//     });
-//   },
+  plan: function(req, res) {
+    res.send('A faire');
+  },
 
-//   contact: function(req, res) {
-//     res.render('coming-soon', {
-//       title: 'Contact',
-//     });
-//   },
+  contact: function(req, res) {
+    res.send('A faire');
+  },
 
-//   notFound: function(req, res) {
-//     res.status(404).render('error', {
-//       message: 'La page demandée n\'a pas été trouvée.',
-//     });
-//   }
+};
 
-// };
-
-// export default mainController;
+export default mainController;

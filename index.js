@@ -1,6 +1,7 @@
 import express from 'express';
 import session from 'express-session';
 import * as dotenv from 'dotenv';
+import router from './app/router.js';
 
 dotenv.config();
 
@@ -11,7 +12,7 @@ app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
 app.use(express.urlencoded({ extended: true }));
-// app.use(express.static('./inte-pilori/public'));
+app.use(express.static('./inte-portfolio/public'));
 
 app.use(session({
   saveUninitialized: true,
@@ -19,7 +20,7 @@ app.use(session({
   secret: process.env.SECRET
 }));
 
-// app.use(router);
+app.use(router);
 
 app.listen(port, () => {
   console.log(`Serveur démarré sur http://localhost:${port}`);
